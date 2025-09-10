@@ -1,0 +1,139 @@
+* {
+  transition: 0.3s ease;
+}
+
+/* global */
+
+.box {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 0 0 #e5e5e5;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+.button {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.container img {
+  display: block;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 2.25em;
+  line-height: 1.5em;
+  letter-spacing: -0.035em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+p {
+  margin: 0.5rem 0 2rem;
+  line-height: 1.8;
+}
+footer a {
+  color: black;
+  opacity: 0.6;
+  font-size: 2.3rem;
+  margin-right: 0.5rem;
+}
+/* hover */
+nav ul li a:hover {
+  color: #e89980;
+  cursor: pointer;
+}
+.banner .links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffff;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+.cta div button:hover {
+  background-color: #e4ad9d;
+  color: white;
+}
+.row-container .container img:hover {
+  transform: scale(1.1);
+}
+.row-container button:hover {
+  background-color: #b0aeae;
+  color: white;
+}
+/* ========================================= */
+.header {
+  padding: 2rem;
+}
+.features {
+  margin: 2rem 0;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+/* =============================== */
+.features .container {
+  grid-template-columns: 1fr 1fr;
+  padding: 25px;
+}
+.features .features-box {
+  padding: 20px;
+}
+.features .features-box img {
+  width: 80px;
+}
+.features .features-box:first-child {
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+.features .features-box:nth-child(2) {
+  border-left: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.features .features-box:nth-child(3) {
+  border-top: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+.features .features-box:nth-child(4) {
+  border-top: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+/* portfolio page*/
+.project-container .pro-cont {
+  position: relative;
+  overflow: hidden;
+}
+.des {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  background-color: white;
+}
+.des h3 {
+  line-height: 1;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #646464;
+}
+.des p {
+  margin: 0;
+}
+.project-container .pro-cont:hover .des {
+  bottom: 0;
+  transition: 0.3s ease;
+  transform: translateY(0);
+}
+.project-container .pro-cont:hover img {
+  transform: scale(1.1) rotate(3deg);
+  filter: blur(5px);
+}
